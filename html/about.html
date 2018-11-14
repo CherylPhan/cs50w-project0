@@ -7,20 +7,37 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="../css/bootstrap-4.1.3-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/styles.css">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/styles_mobile.css">
 
         <title>Lazy English</title>
     </head>
     <body>
         <div class="container">
-            <nav>
-                <ul class="list-unstyled">
-                    <li><a class="nav-link" href="index.html">Lazy English</a></li>
-                    <li><a class="nav-link" href="about.html">About me</a></li>
-                    <li><a class="nav-link" href="structure.html">Learning structure</a></li>
-                    <li><a class="nav-link" href="contact.html">Get in touch</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fa5770">
+                    <a class="navbar-brand" href="#">Lazy English</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html">About me</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="structure.html">Course structure</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="contact.html">Get in touch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
     
             <main>
                 <img id="avatar" height="100px" src="../images/avatar.png">
@@ -43,5 +60,11 @@
                     </p>
             </main>
         </div> <!-- container -->
+
+        <!-- BOOTSTRAP'S JAVASCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
 </html>
