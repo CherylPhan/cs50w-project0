@@ -1,0 +1,163 @@
+// VARIABLES //
+$theme-color: #fa5770;
+$secondary-color: #333333;
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 75vw;
+    color: $secondary-color;
+}
+
+nav {
+    position: fixed;
+    left: 75vw;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    background-color: $theme-color;
+
+    ul {
+        margin-left: 5vw;
+        margin-top: 8vw;
+
+        li {
+            line-height: 3.5;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
+
+a:hover {
+    color: $secondary-color;
+}
+
+main {
+    max-width: 75vw;
+    margin-top: 8vw;
+    margin-left: 8vw;
+    padding-right: 8vw;
+}
+
+h1, h2 {
+    color: $theme-color;
+
+    small {
+        font-size: 1.2rem;
+        text-transform: none;
+    }
+}
+
+.content {
+    display: flex;
+    margin-top: 50px;
+
+    iframe {
+        border: 2px solid $theme-color;
+    }
+}
+
+.content-text {
+    margin-left: 30px;
+
+    li {
+        line-height: 2rem;
+    }
+}
+
+.lead {
+    color: $theme-color;
+}
+
+#avatar {
+    margin-bottom: 30px;
+}
+
+.brand {
+    font-weight: bold;
+    color: $theme-color;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid $theme-color;
+
+    td, th {
+        padding: 15px;
+        border: 1px solid $theme-color;
+    }
+}
+
+thead {
+    background-color: $theme-color;
+
+    th {
+        color: white;
+        text-align: center;
+    }
+}
+
+tbody {
+    th {
+        color: $theme-color;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+} 
+
+.right-wrapper {
+    margin-left: 80px;
+}
+
+.icon-color {
+    color: $theme-color;
+}
+
+.icon {
+    width: 30px;
+}
+
+.right-wrapper {
+    img {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin-bottom: 28px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+#contact > .lead {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: $theme-color;
+    color: white;
+}
+
+#structure {
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+button:hover {
+    background-color: $secondary-color;
+}
