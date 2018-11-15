@@ -1,3 +1,12 @@
+html {
+  font-size: 1rem;
+}
+
+.brand {
+  color: #fa5770;
+  font-weight: bold;
+}
+
 main {
   padding: 5vh 10vw;
 }
@@ -11,10 +20,24 @@ main {
   margin-bottom: 0.8em;
 }
 #main-home .column {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
+@media (max-width: 500px) {
+  main {
+    padding: 5vh 5vw;
+  }
+}
+header h1 {
+  color: #fa5770;
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
 @media (min-width: 1400px) {
   html {
     font-size: 1.4rem;

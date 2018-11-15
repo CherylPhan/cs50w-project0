@@ -2,6 +2,17 @@
 $main-color: #fa5770;
 $secondary-color: #333333;
 
+// GENERAL STYLES //
+
+html {
+    font-size: 1rem;
+}
+
+.brand {
+    color: $main-color;
+    font-weight: bold;
+}
+
 // MAIN STYLES //
 main {
     padding: 5vh 10vw;
@@ -19,12 +30,34 @@ main {
     }
 
     .column {
-        padding-top: 1em;
-        padding-bottom: 1em;
+        margin-top: 1em;
+        margin-bottom: 1.5em;
     }
 }
 
+@media (max-width: 500px) {
+    main {
+        padding: 5vh 5vw;
+    }
+}
+
+// HEADER STYLES //
+
+header {
+    h1 {
+        color: $main-color;
+    }
+}
+
+
+
 // RESPONSIVE TEXT
+
+@media (max-width: 350px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
 
 @media (min-width: 1400px) {
     html {
