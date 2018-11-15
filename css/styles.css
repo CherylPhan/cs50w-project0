@@ -1,143 +1,123 @@
-.container {
-  margin: 0;
-  padding: 0;
-  width: 75vw;
+html {
+  font-size: 1rem;
   color: #333333;
-}
-
-nav {
-  position: fixed;
-  left: 75vw;
-  top: 0;
-  height: 100vh;
-  width: 25vw;
-  background-color: #fa5770;
-}
-nav ul {
-  margin-left: 5vw;
-  margin-top: 8vw;
-}
-nav ul li {
-  line-height: 3.5;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-nav ul a {
-  color: white;
-}
-
-a:hover {
-  color: #333333;
-}
-
-main {
-  max-width: 75vw;
-  margin-top: 8vw;
-  margin-left: 8vw;
-  padding-right: 8vw;
-}
-
-h1, h2 {
-  color: #fa5770;
-}
-h1 small, h2 small {
-  font-size: 1.2rem;
-  text-transform: none;
-}
-
-.content {
-  display: flex;
-  margin-top: 50px;
-}
-.content iframe {
-  border: 2px solid #fa5770;
-}
-
-.content-text {
-  margin-left: 30px;
-}
-.content-text li {
-  line-height: 2rem;
-}
-
-.lead {
-  color: #fa5770;
-}
-
-#avatar {
-  margin-bottom: 30px;
 }
 
 .brand {
+  color: #fa5770;
   font-weight: bold;
+}
+
+#main-contact, #main-structure, #main-about, #main-home {
+  padding: 5vh 10vw;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 5vh 5vw;
+  }
+}
+header h1 {
   color: #fa5770;
 }
 
-table {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  border: 1px solid #fa5770;
+@media (max-width: 350px) {
+  html {
+    font-size: 0.8rem;
+  }
 }
-table td, table th {
-  padding: 15px;
-  border: 1px solid #fa5770;
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 2500px) {
+  html {
+    font-size: 2.5rem;
+  }
+}
+#main-home ul {
+  margin-bottom: 0;
+}
+#main-home li {
+  line-height: 1.5em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+#main-home .column {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
-thead {
-  background-color: #fa5770;
+#main-about {
+  padding-top: 10vh;
 }
-thead th {
+#main-about img {
+  max-width: 100%;
+}
+#main-about .lead {
+  margin-top: 1.5em;
+  color: #fa5770;
+}
+
+@media (min-width: 1000px) {
+  #main-about img {
+    max-width: 30%;
+  }
+}
+#main-structure table {
+  margin-top: 1em;
+  border: 2px solid #fa5770;
+  min-width: 480px;
+}
+#main-structure th, #main-structure td {
+  border: 2px solid #fa5770;
+  padding: 1em;
+}
+#main-structure ul {
+  margin-bottom: 0;
+}
+#main-structure thead th {
+  background-color: #fa5770;
   color: white;
   text-align: center;
 }
-
-tbody th {
+#main-structure tbody th {
   color: #fa5770;
-}
-tbody ul {
-  margin-bottom: 0;
+  vertical-align: middle;
 }
 
-.right-wrapper {
-  margin-left: 80px;
+#main-contact .icon {
+  width: 2em;
+}
+#main-contact #left-column, #main-contact #right-column {
+  margin-top: 5vh;
+}
+#main-contact #right-column {
+  padding-left: 5vw;
+}
+#main-contact #contact-details img {
+  max-width: 75%;
+}
+#main-contact #contact-details > ul {
+  margin-top: 1.5em;
+}
+#main-contact #contact-details > ul li {
+  line-height: 2;
 }
 
-.icon-color {
-  color: #fa5770;
-}
-
-.icon {
-  width: 30px;
-}
-
-.right-wrapper img {
-  margin-bottom: 30px;
-}
-.right-wrapper ul {
-  margin-bottom: 28px;
-}
-.right-wrapper li {
-  margin-bottom: 10px;
-}
-
-#contact > .lead {
-  margin-top: 50px;
-}
-
-.btn {
+button {
   background-color: #fa5770;
   color: white;
-}
-
-#structure h2 {
-  margin-bottom: 30px;
-}
-#structure p {
-  margin-bottom: 30px;
 }
 
 button:hover {
   background-color: #333333;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_mobile.css.map */
