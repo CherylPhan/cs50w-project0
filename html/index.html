@@ -14,53 +14,59 @@
         <title>Lazy English</title>
     </head>
     <body>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fa5770">
-                <a class="navbar-brand" href="#">Lazy English</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About me</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="structure.html">Course structure</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">Get in touch</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    
-            <main>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fa5770">
+            <a class="navbar-brand" href="#">Lazy English</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About me</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="structure.html">Course structure</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Get in touch</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <main id="main-home">
+            <div class="container-fluid">
                 <header>
-                    <h1 class="text-uppercase">Lazy English <small class="text-muted">English for lazy asses</small></h1>
-                    <p>From a lazy English <del>teacher</del> learner</p>
+                    <h1 class="text-uppercase">Lazy English</h1>
+                    <p>English for lazy people</p>
                 </header>
 
-                <div class="content">
-                    <iframe width="700px" height="300px" src="https://www.youtube.com/embed/HylCkaryugk"></iframe>
-                    <div class="content-text">
+                <div class="row">
+                    <div class="column col-12 col-lg-6 col-xl-5 align-self-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="https://www.youtube.com/embed/HylCkaryugk"></iframe>
+                        </div>
+                    </div>
+                    <div class="column col-12 col-lg-6 col-xl-7 align-self-center">
                         <ul>
                             <li>You want to learn English?</li>
                             <li>You are a total beginner?</li>
                             <li>You never succeeded with any English courses?</li>
                             <li>You can’t memorize words?</li>
-                            <li>You have no idea how to use all those boring, mathematic looking grammatical rules?</li>
+                            <li>You have no idea how to use all those complex grammatical rules?</li>
                         </ul>
-                        <p class="lead">This might be your right destination, after all!</p>
-                        <p><span class="brand">LAZY ENGLISH</span> is an English “course” which helps you to acquire English in a natural, effortless way.</p>
                     </div>
-                </div> <!-- content -->
-            </main>
-        </div> <!-- container -->
+                </div>
+
+                <p class="lead">This might be your right destination, after all!</p>
+                <p><span class="brand">LAZY ENGLISH</span> is an English “course” which helps you to acquire English in a natural, effortless way.</p>
+            </div> <!-- container -->
+        </main>    
 
         <!-- BOOTSTRAP'S JAVASCRIPT -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
