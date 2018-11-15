@@ -5,6 +5,7 @@ $secondary-color: #333333;
 // GENERAL STYLES //
 html {
     font-size: 1rem;
+    color: $secondary-color;
 }
 
 .brand {
@@ -126,4 +127,45 @@ header {
         color: $main-color;
         vertical-align: middle;
     }
+}
+
+// CONTACT PAGE STYLES //
+#main-contact {
+    @extend %main;
+
+    .icon {
+        width: 2em;
+    }
+
+    #left-column, #right-column {
+        margin-top: 5vh;
+    }
+
+    #right-column {
+        padding-left: 5vw;
+    }
+
+    #contact-details {
+        img {
+            max-width: 75%;
+        }
+    }
+
+    #contact-details > ul {
+        margin-top: 1.5em;
+
+        li {
+            line-height: 2;
+        }
+    }
+}
+
+// BUTTON STYLES //
+button {
+    background-color: $main-color;
+    color: white;
+}
+
+button:hover {
+    background-color: $secondary-color;
 }

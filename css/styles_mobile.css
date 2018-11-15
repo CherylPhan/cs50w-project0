@@ -1,5 +1,6 @@
 html {
   font-size: 1rem;
+  color: #333333;
 }
 
 .brand {
@@ -7,7 +8,7 @@ html {
   font-weight: bold;
 }
 
-#main-structure, #main-about, #main-home {
+#main-contact, #main-structure, #main-about, #main-home {
   padding: 5vh 10vw;
 }
 
@@ -89,6 +90,34 @@ header h1 {
 #main-structure tbody th {
   color: #fa5770;
   vertical-align: middle;
+}
+
+#main-contact .icon {
+  width: 2em;
+}
+#main-contact #left-column, #main-contact #right-column {
+  margin-top: 5vh;
+}
+#main-contact #right-column {
+  padding-left: 5vw;
+}
+#main-contact #contact-details img {
+  max-width: 75%;
+}
+#main-contact #contact-details > ul {
+  margin-top: 1.5em;
+}
+#main-contact #contact-details > ul li {
+  line-height: 2;
+}
+
+button {
+  background-color: #fa5770;
+  color: white;
+}
+
+button:hover {
+  background-color: #333333;
 }
 
 /*# sourceMappingURL=styles_mobile.css.map */

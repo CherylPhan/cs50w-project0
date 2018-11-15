@@ -14,36 +14,40 @@
         <title>Lazy English</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fa5770">
-                <a class="navbar-brand" href="#">Lazy English</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About me</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="structure.html">Course structure</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">Get in touch</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-    
-            <main id="main-contact">
-                <h2>GET IN TOUCH <small class="text-muted">with Lazy English</small></h2>
-                <p class="lead">Send me your queries</p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fa5770">
+            <a class="navbar-brand" href="#">Lazy English</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About me</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="structure.html">Course structure</a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Get in touch</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main-contact">
+            <div class="container-fluid">
+                <header>
+                    <h1>GET IN TOUCH</h1>
+                    <p class="lead">Send me your queries</p>
+                </header>
+
                 <div class="row">
-                    <div class="col-xl-6 col-sm-12">
+                    <div id="left-column" class="col-md-6 col-sm-12">
                         <form>
                             <div class="form-group">
                                 <label for="name">Name</label>
@@ -59,25 +63,27 @@
                             </div>
                             <button type="submit" class="btn">Submit</button>
                         </form>
-                    </div>
-                    <div class="col-xl-6 col-sm-12">
-                        <div class="right-wrapper">
-                            <img src="../images/avatar.png" height="100px">
+                    </div> <!-- left-column -->
+                    <div id="right-column" class="col-md-6 col-sm-12">
+                        <div id="contact-details">
+                            <img src="../images/avatar.png">
                             <ul class="list-unstyled">
                                 <li>teacher.sloth@gmail.com</li>
                                 <li>+012 345 6789</li>
                             </ul>
+                        </div>
+                        <div id="social-media">
                             <p class="lead">Follow us on social media</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item"><a href="https:www.facebook.com" target="_blank"><img class="icon" src="../images/facebook.png"></a></li>
                                 <li class="list-inline-item"><a href="https:www.twitter.com" target="_blank"><img class="icon" src="../images/twitter.png"></a></li>
                                 <li class="list-inline-item"><a href="https:www.youtube.com" target="_blank"><img class="icon" src="../images/youtube.png"></a></li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div> <!-- container -->
+                        </div> <!-- social-media -->
+                    </div> <!-- right column -->
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </main>
 
         <!-- BOOTSTRAP'S JAVASCRIPT -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
