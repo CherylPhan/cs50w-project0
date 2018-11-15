@@ -96,3 +96,34 @@ header {
         }
     }
 }
+
+// STRUCTURE PAGE STYLES //
+#main-structure {
+    @extend %main;
+
+    table {
+        margin-top: 1em;
+        border: 2px solid $main-color;
+        min-width: 480px;
+    }
+
+    th, td {
+        border: 2px solid $main-color;
+        padding: 1em;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    thead th {
+        background-color: $main-color;
+        color: white;
+        text-align: center;
+    }
+
+    tbody th {
+        color: $main-color;
+        vertical-align: middle;
+    }
+}

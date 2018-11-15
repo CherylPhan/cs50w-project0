@@ -7,7 +7,7 @@ html {
   font-weight: bold;
 }
 
-#main-about, #main-home {
+#main-structure, #main-about, #main-home {
   padding: 5vh 10vw;
 }
 
@@ -68,6 +68,27 @@ header h1 {
   #main-about img {
     max-width: 30%;
   }
+}
+#main-structure table {
+  margin-top: 1em;
+  border: 2px solid #fa5770;
+  min-width: 480px;
+}
+#main-structure th, #main-structure td {
+  border: 2px solid #fa5770;
+  padding: 1em;
+}
+#main-structure ul {
+  margin-bottom: 0;
+}
+#main-structure thead th {
+  background-color: #fa5770;
+  color: white;
+  text-align: center;
+}
+#main-structure tbody th {
+  color: #fa5770;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=styles_mobile.css.map */
