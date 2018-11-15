@@ -3,7 +3,6 @@ $main-color: #fa5770;
 $secondary-color: #333333;
 
 // GENERAL STYLES //
-
 html {
     font-size: 1rem;
 }
@@ -14,25 +13,8 @@ html {
 }
 
 // MAIN STYLES //
-main {
+%main {
     padding: 5vh 10vw;
-}
-
-#main-home {
-    ul {
-        margin-bottom: 0;
-    }
-
-    li {
-        line-height: 1.5em;
-        margin-top: 0.8em;
-        margin-bottom: 0.8em;
-    }
-
-    .column {
-        margin-top: 1em;
-        margin-bottom: 1.5em;
-    }
 }
 
 @media (max-width: 500px) {
@@ -42,17 +24,13 @@ main {
 }
 
 // HEADER STYLES //
-
 header {
     h1 {
         color: $main-color;
     }
 }
 
-
-
 // RESPONSIVE TEXT
-
 @media (max-width: 350px) {
     html {
         font-size: 0.8rem;
@@ -74,5 +52,47 @@ header {
 @media (min-width: 2500px) {
     html {
         font-size: 2.5rem;
+    }
+}
+
+// INDEX PAGE STYLES //
+#main-home {
+    @extend %main;
+    ul {
+        margin-bottom: 0;
+    }
+
+    li {
+        line-height: 1.5em;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+    }
+
+    .column {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+    }
+}
+
+// ABOUT PAGE STYLES
+#main-about {
+    @extend %main;
+    padding-top: 10vh; 
+
+    img {
+        max-width: 100%;
+    }
+    
+    .lead {
+        margin-top: 1.5em;
+        color: $main-color;
+    }
+}
+
+@media (min-width: 1000px) {
+    #main-about {
+        img {
+            max-width: 30%;
+        }
     }
 }

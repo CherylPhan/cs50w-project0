@@ -7,21 +7,8 @@ html {
   font-weight: bold;
 }
 
-main {
+#main-about, #main-home {
   padding: 5vh 10vw;
-}
-
-#main-home ul {
-  margin-bottom: 0;
-}
-#main-home li {
-  line-height: 1.5em;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
-}
-#main-home .column {
-  margin-top: 1em;
-  margin-bottom: 1.5em;
 }
 
 @media (max-width: 500px) {
@@ -51,6 +38,35 @@ header h1 {
 @media (min-width: 2500px) {
   html {
     font-size: 2.5rem;
+  }
+}
+#main-home ul {
+  margin-bottom: 0;
+}
+#main-home li {
+  line-height: 1.5em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+#main-home .column {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+#main-about {
+  padding-top: 10vh;
+}
+#main-about img {
+  max-width: 100%;
+}
+#main-about .lead {
+  margin-top: 1.5em;
+  color: #fa5770;
+}
+
+@media (min-width: 1000px) {
+  #main-about img {
+    max-width: 30%;
   }
 }
 
